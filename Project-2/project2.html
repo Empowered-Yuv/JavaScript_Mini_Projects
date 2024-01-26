@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TODOs List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand fw-bold" href="#">Empowerd_Yuv TODOs List</a>
+         
+        </div>
+      </nav>
+
+      <div class="container my-4">
+        <h2 class="text-center">TODOs List</h2>
+        <div class="form">
+            <form>
+                <div class="mb-3">
+                  <label for="Task" class="form-label">Task</label>
+                  <input type="text" class="form-control" id="Task" aria-describedby="emailHelp">
+                  <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div> -->
+                <div class="mb-3 my-4">
+                    <label for="Description">Description</label>
+                    <textarea class="form-control my-2" placeholder="Describe Here" id="Description" style="height: 100px"></textarea>
+                  
+                  </div>
+               
+                <button type="submit" class="btn btn-primary" id="add">Add To List</button>
+              </form>
+        </div>
+      </div>
+
+      <div class="display my-5">
+        <h2 class="text-center">Your TODOs List</h2>
+        <button class="btn btn-primary" id="clear" onclick="cleared()">Clear List</button>
+        <div class="list my-4">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">S.no.</th>
+                    <th scope="col">Task</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="tb">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Message Ritika</td>
+                    <td>Message as she is the first priority</td>
+                    <td><button class="btn btn-primary">Done</button></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="project2.js"></script>
+  </body>
+</html>
